@@ -1,0 +1,30 @@
+{
+  "name": "mean-demo",
+  "version": "0.0.1",
+  "author": "Jean-Baptiste Pionnier",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "config": "~0.4.20",
+    "express": "~3.4.0",
+    "express-mongoose": "~0.1.0",
+    "express-resource": "~1.0.0",
+    "js-yaml": "~3.0.0",
+    "lodash": "~2.4.0",
+    "mongoose": "~3.8.0",
+    "mongoose-validator": "~0.2.1"
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "~0.2.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.0",
+    "grunt-concurrent": "~0.4.0",
+    "grunt-nodemon": "~0.1.0"
+  }
+}

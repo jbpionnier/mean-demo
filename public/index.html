@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mean Demo</title>
+  <link rel="stylesheet" href="sass-bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="demoApp" ng-controller="AppCtrl">
+
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mean Demo</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li ng-class="{active: currentNavItem == 'books'}"><a href="/#/books">Livres</a></li>
+        <li ng-class="{active: currentNavItem == 'users'}"><a href="/#/users">Utilisateurs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-danger ng-cloak" ng-show="alert.message">{{alert.message}}</div>
+
+  <div class="container" ng-view></div>
+
+
+  <script src="angular/angular.js"></script>
+  <script src="angular-resource/angular-resource.js"></script>
+  <script src="angular-route/angular-route.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/app-ctrl.js"></script>
+  <script src="js/controllers/books-ctrl.js"></script>
+  <script src="js/controllers/users-ctrl.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

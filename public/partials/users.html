@@ -1,0 +1,24 @@
+<div>
+  <h3><i class="glyphicon glyphicon-user"></i> Utilisateurs</h3>
+
+
+  <table class="table">
+    <tr>
+      <th>Nom</th>
+      <th>Email</th>
+      <th> </th>
+    </tr>
+    <tr ng-repeat="user in users">
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td><button class="btn btn-xs btn-danger" ng-click="remove(user)"><i class="glyphicon glyphicon-trash"></i> </button></td>
+    </tr>
+  </table>
+
+  <form class="form-horizontal" role="form" ng-submit="save()">
+    <input class="text" class="form-control" ng-model="newUser.name" placeholder="Nom">
+    <input class="text" class="form-control" ng-model="newUser.email" placeholder="Email">
+    <button type="submit" class="btn btn-sm btn-primary">Ajouter</button>
+  </form>
+
+</div>

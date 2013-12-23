@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+.nodemonignore
+node_modules
+bower_components
+npm-debug.log
+config/development.yaml
+config/production.yaml
+config/runtime.json

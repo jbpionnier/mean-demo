@@ -1,0 +1,26 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+
+  "eqnull": true,
+  "smarttabs": true,
+
+  "browser": true,
+  "devel": false,
+  "jquery": true,
+  "node": true,
+
+  "globals": {
+    "angular": true,
+    "demoApp": true
+  }
+}

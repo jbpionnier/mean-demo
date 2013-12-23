@@ -1,0 +1,25 @@
+<div>
+  <h3><i class="glyphicon glyphicon-book"></i> Livres</h3>
+
+  <table class="table">
+    <tr>
+      <th>Nom</th>
+      <th>Auteur</th>
+      <th>Catégorie</th>
+      <th>Propriétaire</th>
+      <th> </th>
+    </tr>
+    <tr ng-repeat="book in books">
+      <td><a ng-href="#/books/{{book._id}}">{{book.name}}</a></td>
+      <td>{{book.author}}</td>
+      <td>{{book.category}}</td>
+      <td>{{book.owner.name}}</td>
+      <td><button class="btn btn-xs btn-danger" ng-click="remove(book)"><i class="glyphicon glyphicon-trash"></i> </button></td>
+    </tr>
+  </table>
+
+  <form class="form-horizontal" ng-submit="save()">
+    <input class="text" class="form-control" ng-model="newBook.name" placeholder="Livre">
+    <button type="submit" class="btn btn-sm btn-primary">Ajouter</button>
+  </form>
+</div>

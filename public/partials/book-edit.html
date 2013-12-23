@@ -1,0 +1,25 @@
+<div>
+
+  <h3>
+    {{book.name}}
+    <img class="pull-right" ng-show="book._id" ng-src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http://localhost:3000/#/books/{{book._id}}" width="150" height="150"/>
+  </h3>
+
+  <form role="form" style="width: 300px" ng-submit="save()">
+    <div class="form-group">
+      <label>Auteur</label>
+      <input type="text" class="form-control" ng-model="book.author" placeholder="Auteur">
+    </div>
+    <div class="form-group">
+      <label>Propriétaire</label>
+      <select class="form-control" ng-model="book.owner" ng-options="u._id as u.name for u in users">
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Categorie</label>
+      <input type="text" class="form-control" ng-model="book.category" placeholder="Categorie">
+    </div>
+    <button type="submit" class="btn btn-primary">Sauvegarder</button>
+  </form>
+
+</div>
